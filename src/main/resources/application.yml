@@ -1,0 +1,13 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: restaurant-service
+  data:
+    mongodb:
+      authentication-database: admin
+      host: 127.0.0.1
+      port: 27017
+      username: root
+      password: rootpassword
