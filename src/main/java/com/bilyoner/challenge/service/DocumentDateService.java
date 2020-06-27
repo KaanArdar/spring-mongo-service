@@ -7,4 +7,7 @@ public interface DocumentDateService {
 
     DocumentDataResponse generateDocumentData(DocumentDataRequest request);
 
+    DocumentDataResponse getDocumentDataWithNumber(Long number);
+
+
 }
