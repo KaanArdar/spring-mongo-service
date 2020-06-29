@@ -181,7 +181,7 @@ public class DocumentDataServiceTest {
         List<DocumentDataResponse> allDocumentDataWithOrder = documentDataService.findAllDocumentDataWithOrder(filter);
 
         assertEquals(2, allDocumentDataWithOrder.size());
-        assertEquals(allDocumentDataWithOrder.get(0).getNumber(),data.getNumber());
+        assertEquals(allDocumentDataWithOrder.get(0).getNumber(), data.getNumber());
     }
 
     @Test
@@ -195,7 +195,7 @@ public class DocumentDataServiceTest {
         List<DocumentDataResponse> allDocumentDataWithOrder = documentDataService.findAllDocumentDataWithOrder(filter);
 
         assertEquals(2, allDocumentDataWithOrder.size());
-        assertEquals(allDocumentDataWithOrder.get(0).getNumber(),data2.getNumber());
+        assertEquals(allDocumentDataWithOrder.get(0).getNumber(), data2.getNumber());
     }
 
 
