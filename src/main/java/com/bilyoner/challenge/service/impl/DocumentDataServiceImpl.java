@@ -18,6 +18,7 @@ import java.util.stream.Collectors;
 @Service
 public class DocumentDataServiceImpl implements DocumentDateService {
 
+    private final String SORT_FIELD = "number";
     private final DocumentDataRepository documentDataRepository;
 
     public DocumentDataServiceImpl(DocumentDataRepository documentDataRepository) {
@@ -71,7 +72,7 @@ public class DocumentDataServiceImpl implements DocumentDateService {
 
     @Override
     public List<DocumentDataResponse> findAllDocumentDataWithOrder(Sort.Direction filter) {
-        return documentDataRepository.findAllByOrderByNumber(Sort.by(filter, "number"))
+        return documentDataRepository.findAllByOrderByNumber(Sort.by(filter, SORT_FIELD))
                 .stream()
                 .map(DocumentDataMapper::EntityToResponse)
                 .collect(Collectors.toList());

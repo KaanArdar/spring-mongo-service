@@ -21,8 +21,5 @@ public interface DocumentDataRepository extends MongoRepository<DocumentData,Lon
 
     List<DocumentData> findAllByOrderByNumber(Sort sort);
 
-    List<DocumentData> findAllByOrderByNumberDesc();
-
-    List<DocumentData> findAllByOrderByNumberAsc();
 
 }
